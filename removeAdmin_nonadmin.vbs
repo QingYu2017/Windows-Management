@@ -1,3 +1,8 @@
+'Auth:Qing.Yu
+'Mail:1753330141@qq.com
+' Ver:V1.0
+'Date:UNKNOW
+
 On Error Resume Next
 
 strComputer = "."
