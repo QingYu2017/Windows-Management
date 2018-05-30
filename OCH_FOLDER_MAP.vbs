@@ -7,7 +7,7 @@
 	strHQ="\\10.xxx.xx.8\ShareFolder"
 		
 	objNetwork.MapNetworkDrive "P:", strHQ, true
-	oShell.NameSpace("P:\").Self.Name = "华侨集团共享"
+	oShell.NameSpace("P:\").Self.Name = "xx集团共享"
 	
 	objNetwork.RemoveNetworkDrive "S:"
 		
