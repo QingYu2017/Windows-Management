@@ -1,7 +1,7 @@
-#Auth:Qing.Yu
-#Mail:1753330141@qq.com
-# Ver:V1.0
-#Date:2018-07-08
+'#Auth:Qing.Yu
+'#Mail:1753330141@qq.com
+'# Ver:V1.0
+'#Date:2018-07-08
 
 '1 使用批量发送，需启用Office宏功能；
 '2 VBA编辑器，按alt+F11进入；
