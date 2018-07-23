@@ -1,0 +1,15 @@
+#Auth:Qing.Yu
+#Mail:1753330141@qq.com
+# Ver:V1.0
+#Date:2018-07-23
+#备份
+---
+- hosts: zabbix
+  tasks:  
+  - name: Copy Windows Server backup to NFS, host 10.166.10.8
+    remote_user: root
+    script: /root/Ansible_Playbook/Script/bakFSRV.sh
+
+  - name: Push Info to WeiChat
+    remote_user: root
+    shell: source ~/.bash_profile; d=`/bin/date +%Y-%m-%d`; str=`ls /root/bakOCH/bakFSRV_10.8/$d/OCH_FILESRV01/ |grep Backup`; /usr/bin/python /usr/local/zabbix/share/zabbix/alertscripts/sendWeixin.py OCH文件服务器备份结果 "【日期】$d "$'\n'"$str" 
